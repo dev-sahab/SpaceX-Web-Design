@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX Web Design</title>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 
+    //....................................................................................................................................................................................................
+    //......SSSSSSS.........HHHHH........HHHHH...BBBBBBBBBBBBBB.....................SSSSSSS.....................................................iiiii.....................................................
+    //....SSSSSSSSSSSS......HHHHH........HHHHH...BBBBBBBBBBBBBBBB.................SSSSSSSSSSS...................................................iiiii.....................................................
+    //...SSSSSSSSSSSSSS.....HHHHH........HHHHH...BBBBBBBBBBBBBBBBB...............SSSSSSSSSSSSS..................................................iiiii.....................................................
+    //..SSSSSSSSSSSSSSS.....HHHHH........HHHHH...BBBBBBBBBBBBBBBBBB.............SSSSSSSSSSSSSSS.................................................iiiii.....................................................
+    //..SSSSSSSSSSSSSSSS....HHHHH........HHHHH...BBBBBBBBBBBBBBBBBB............SSSSSSSSSSSSSSSSS..........................................................................................................
+    //..SSSSS.....SSSSSS....HHHHH........HHHHH...BBBBB........BBBBB............SSSSSS.....SSSSSS..........................................................................................................
+    //..SSSSS......SSSSS....HHHHH........HHHHH...BBBBB........BBBBB............SSSSSS......SSSSS.......eeeeee.......rrrrr.rrrrrrvvv......vvvvv..iiiii........cccccc..........eeeeee..........sssssss......
+    //..SSSSSSS.............HHHHH........HHHHH...BBBBB........BBBBB............SSSSSSS...............eeeeeeeeee.....rrrrrrrrrrrrvvv......vvvvv..iiiii......cccccccccc......eeeeeeeeee......sssssssssss....
+    //..SSSSSSSSS...........HHHHH........HHHHH...BBBBB........BBBBB............SSSSSSSSSS...........eeeeeeeeeeee....rrrrrrrrrrrrvvvv.....vvvvv..iiiii.....cccccccccccc....eeeeeeeeeeee....sssssssssssss...
+    //..SSSSSSSSSSSS........HHHHHHHHHHHHHHHHHH...BBBBBBBBBBBBBBBBBB.............SSSSSSSSSSSS.......eeeeeeeeeeeeee...rrrrrrrrrr.rvvvv....vvvvvv..iiiii....ccccccccccccc...eeeeeeeeeeeeee..esssssssssssss...
+    //...SSSSSSSSSSSSS......HHHHHHHHHHHHHHHHHH...BBBBBBBBBBBBBBBBB..............SSSSSSSSSSSSSS.....eeeee....eeeee...rrrrrr.....rvvvv....vvvvv...iiiii...iccccc...cccccc..eeeee....eeeee..essss....ssssss..
+    //....SSSSSSSSSSSSS.....HHHHHHHHHHHHHHHHHH...BBBBBBBBBBBBBBBBB...............SSSSSSSSSSSSSS....eeeee.....eeee...rrrrrr......vvvvv...vvvvv...iiiii...icccc.....cc.....eeeee.....eeee..esssss....ss.....
+    //.....SSSSSSSSSSSSS....HHHHHHHHHHHHHHHHHH...BBBBBBBBBBBBBBBBBB................SSSSSSSSSSSSS..Seeeeeeeeeeeeeee..rrrrr.......vvvvv..vvvvv....iiiii...icccc...........ceeeeeeeeeeeeeee.essssssss........
+    //........SSSSSSSSSSS...HHHHHHHHHHHHHHHHHH...BBBBBBBBBBBBBBBBBBB..................SSSSSSSSSS..Seeeeeeeeeeeeeee..rrrrr.......vvvvv..vvvvv....iiiii...icccc...........ceeeeeeeeeeeeeee..sssssssssss.....
+    //............SSSSSSS...HHHHH........HHHHH...BBBBB........BBBBBB.....................SSSSSSSS.Seeeeeeeeeeeeeee..rrrrr........vvvvv.vvvvv....iiiii...icccc...........ceeeeeeeeeeeeeee..sssssssssssss...
+    //.SSSSS........SSSSS...HHHHH........HHHHH...BBBBB.........BBBBB.......... SSSS........SSSSSS.Seeeeeeeeeeeeeee..rrrrr........vvvvvvvvvv.....iiiii...icccc...........ceeeeeeeeeeeeeee....ssssssssssss..
+    //.SSSSS........SSSSS...HHHHH........HHHHH...BBBBB.........BBBBB...........SSSSS.......SSSSSS.Seeee.............rrrrr.........vvvvvvvvv.....iiiii...icccc...........ceeee..................sssssssss..
+    //.SSSSSS......SSSSSS...HHHHH........HHHHH...BBBBB........BBBBBB...........SSSSSS.....SSSSSSS..eeeee............rrrrr.........vvvvvvvv......iiiii...icccc.....cc.....eeeee.............sss.....sssss..
+    //.SSSSSSSSSSSSSSSSSS...HHHHH........HHHHH...BBBBBBBBBBBBBBBBBBB...........SSSSSSSSSSSSSSSSS...eeeeee...eee.....rrrrr.........vvvvvvvv......iiiii...iccccc...cccccc..eeeeee...eee....essss.....sssss..
+    //..SSSSSSSSSSSSSSSS....HHHHH........HHHHH...BBBBBBBBBBBBBBBBBBB............SSSSSSSSSSSSSSSS...eeeeeeeeeeeeee...rrrrr..........vvvvvvv......iiiii....cccccccccccccc..eeeeeeeeeeeeee..essssssssssssss..
+    //...SSSSSSSSSSSSSS.....HHHHH........HHHHH...BBBBBBBBBBBBBBBBBB.............SSSSSSSSSSSSSSS.....eeeeeeeeeeeee...rrrrr..........vvvvvv.......iiiii.....cccccccccccc....eeeeeeeeeeeee...sssssssssssss...
+    //....SSSSSSSSSSSS......HHHHH........HHHHH...BBBBBBBBBBBBBBBBB................SSSSSSSSSSSS.......eeeeeeeeeee....rrrrr..........vvvvvv.......iiiii......cccccccccc......eeeeeeeeeee.....sssssssssss....
+    //......SSSSSSSS........HHHHH........HHHHH...BBBBBBBBBBBBBBB....................SSSSSSSS...........eeeeeee......rrrrr...........vvvvv.......iiiii........cccccc..........eeeeeee.........sssssss......
+    //....................................................................................................................................................................................................
+    -->
+
+    <!-- Start Code -->
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="brand">
+                <a href="#">
+                    <img src="./assets/img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="nav-right">
+                <div class="nav-links">
+                    <a href="#" class="active">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Updates</a>
+                    <a href="#">Career</a>
+                    <a href="#">Shop</a>
+                </div>
+                <div class="search">
+                    <div>
+                        <img src="./assets/img/search.png" alt="">
+                        <input type="text" placeholder="Search">
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Banner/Hero Section -->
+        <section class="hero">
+            <div class="social">
+                <div><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+                <div><a href="#"><i class="fab fa-tumblr"></i></a></div>
+                <div><a href="#"><i class="fab fa-instagram"></i></a></div>
+                <div><a href="#"><i class="fab fa-youtube"></i></a></div>
+            </div>
+            <div class="cta container">
+                <div class="left">
+                    <h1>Space Exploaration Technologies Corp. trading as SpaceX, is a private American aerospace manufacturer headquartered California.</h1>
+                    <button class="btn btn-primary">Exporer Space</button>
+                </div>
+                <div class="right">
+                    <img src="./assets/img/astronaut.png" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- strip -->
+    <section class="strip">
+        <h3>StarLink Mission</h3>
+        <button class="btn btn-primary">Join Now</button>
+    </section>
+
+    <!-- Rocket -->
+    <section class="rocket">
+        <div class="container">
+            <div class="left-block">
+                <div class="block">
+                    <h1 class="with-underline">falcon9</h1>
+                    <p>Falcon 9 is a two-stage rocket designed and manufactured by SpaceX for the reliale and safe transport of satellites and the Dragon spacecraft into orbit</p>
+                </div>
+
+                <div class="block dragon">
+                    <h2 class="with-underline">dragon spacecraft</h2>
+                    <p>Dragon carries cargo in the spacecraft's pressurized capsule and unpressurized trunk, which can also accommodate secondary payloads. In the future, Dragon will carry astronauts in the pressurized capsule as well.</p>
+                    <button class="btn btn-secondary">LEARN MORE</button>
+                </div>
+
+                <div class="block composite">
+                    <h2 class="with-underline">composite fairing</h2>
+                    <p>The payload fairing is for the delivery of satellites to destinations in low Earth orbit (LEO), geosynchronous transfer orbit (GTO) and beyond.</p>
+                    <button class="btn btn-secondary">LEARN MORE</button>
+                </div>
+
+                <div class="block first-stage">
+                    <h2 class="with-underline">first stage</h2>
+                    <p>Falcon 9's first stage incorporates nine Merlin engines and aluminum-lithuim alloy tanks containing liquid oxygen and rocket-grade kerosene (RP-1) propellant.</p>
+                    <button class="btn btn-secondary">LEARN MORE</button>
+                </div>
+
+                <div class="block capacity">
+                    <div class="engine">
+                        <h4 class="with-underline">Engine</h4>
+                        <h6>9</h6>
+                    </div>
+                    <div class="burntime">
+                            <h4 class="with-underline">Burntime</h4>
+                            <h6>162<small>SEC</small></h6>
+                    </div>
+                </div>
+
+                <div class="block level capacity">
+                    <div>
+                        <h4 class="with-underline">Thust At Sea Level</h4>
+                        <h6>7,607kN1</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="rocket-body">
+                <span><img src="./assets/img/rocket1.png" class="first"></span>
+                <span><img src="./assets/img/rocket2.png" class="second"></span>
+                <span><img src="./assets/img/rocket3.png" class="third"></span>
+            </div>
+            <div class="right-block">
+
+                <div class="floating-graphics">
+                    <img src="./assets/img/bus.png" alt="">
+                </div>
+                <div class="block payload">
+                    <h2>payload</h2>
+                    <p>Falcon 9 delivers payloads to space aboard the Dragon spacecraft or inside a composite fairing</p>
+                </div>
+
+                <div class="block second-stage">
+                    <h2 class="with-underline">Second stage</h2>
+                    <p>Falcon 9's first stage incorporates nine Merlin engines and aluminum-lithuim alloy tanks containing liquid oxygen and rocket-grade kerosene (RP-1) propellant.</p>
+                    <button class="btn btn-secondary">LEARN MORE</button>
+                </div>
+
+                <div class="block capacity">
+                    <div class="engine">
+                        <h4 class="with-underline">Engine</h4>
+                        <h6>1</h6>
+                    </div>
+                    <div class="burntime">
+                            <h4 class="with-underline">Burntime</h4>
+                            <h6>397<small>SEC</small></h6>
+                    </div>
+                </div>
+
+                <div class="block level capacity">
+                    <div>
+                        <h4 class="with-underline">Thust At Sea Level</h4>
+                        <h6>934kN210</h6>
+                    </div>
+                </div>
+
+                <div class="block engines">
+                    <img src="./assets/img/engines.png" alt="">
+                </div>
+
+                <div class="block marline">
+                    <h2>nine marline engines</h2>
+                    <p>With its nine first-stage Merlin engines clustered together, Falcon 9 can sustain up to two engine shutdowns during flight and still successfully complete its mission. Falcon 9 its the only launch vehicle in its class with this key reliability feature.</p>
+                </div>
+
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <div>
+                    <a href="#"><img src="./assets/img/logo.png" alt=""></a>
+                </div>
+                <span>&copy; 2022 Clever Coder</span>
+            </div>
+            <div>
+                <h1>About Us</h1>
+                <ul>
+                    <li><a href="#">WHO WE ARE</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">MISSIONS</a></li>
+                    <li><a href="#">OTHER COMPANIES</a></li>
+                </ul>
+            </div>
+            <div>
+                <h1>Company</h1>
+                <ul>
+                    <li><a href="#">CAREERS</a></li>
+                    <li><a href="#">LEGAL</a></li>
+                    <li><a href="#">POLICY</a></li>
+                    <li><a href="#">PRESS</a></li>
+                    <li><a href="#">BLOG</a></li>
+                </ul>
+            </div>
+            <div class="socials">
+                <div class="footer-social">
+                    <h1>Socials</h1>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tumblr"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/app.js"></script>
+</body>
+</html>
